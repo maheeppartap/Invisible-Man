@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
+from PIL.Image import Image
+
 SCREEN_HEIGHT = 1500
 SCREEN_WIDTH = 2500
 
@@ -51,8 +53,8 @@ window.geometry("2500x1500")
     #landing page
 
 
-
-logo_photo = tk.PhotoImage(file = "..\src\images\Logo.png")
+logo_photo = Image.l('..\src\images\Logo.png')
+ #= tk.PhotoImage(file = "..\src\images\Logo.png")
 
 bt = tk.Button(window, text="Start", bg = "#b7b6b6", command = clicked)
 bt.config(width = 20, height = 2)
