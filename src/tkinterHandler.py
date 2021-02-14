@@ -56,8 +56,9 @@ window.geometry("2500x1500")
 
 
     #submitted page
-sub_top_label = tk.Label(bg = '#C4AB9B')
-sub_top_label.place(height = SCREEN_HEIGHT/10, width = SCREEN_WIDTH)
+top_label = tk.Label(bg = '#C4AB9B')
+top_label.place(height = SCREEN_HEIGHT/10, width = SCREEN_WIDTH)
+
 
 
 bt = tk.Button(window, text="Start", bg = "#b7b6b6", command = clicked)
