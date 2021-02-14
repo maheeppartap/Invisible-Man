@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-from PIL.Image import Image
+from PIL import Image, ImageDraw, ImageTk
 
 SCREEN_HEIGHT = 1500
 SCREEN_WIDTH = 2500
@@ -12,8 +12,12 @@ SCREEN_WIDTH = 2500
 
         #pages
 def loading_page():
-    #all the other pages. pack_forget()
-    #loading page shit .pack()
+    load = Image.open('..\src\images\logo.png')
+    render = ImageTk.PhotoImage(load)
+    panel = tk.Label(window, image=render)
+    panel.photo = render
+    panel.place(x=22, y=222)
+
     return 0
 
 def landing_page():
@@ -34,32 +38,14 @@ def about_page():
 
         #diff buttons clicked
 def clicked():
+
     label = tk.Label()
     label.configure(text="you clicked, yay")
     label.pack()
 
-
-        #everything
-
-    #window
 window = tk.Tk(className = "Invisible Man")
 window.configure(bg = '#B7B6B6')
 window.geometry("2500x1500")
-
-    #loading page
-#label = Label(window, text="Invisible Man", font=("Times New Roman", 30)).pack()
-#label.grid(column=0, row=0)
-
-    #landing page
-
-image1 = open('..\src\images\Logo.png', 'r+b')
-display(image1)
-#logo_photo = Image.l('..\src\images\Logo.png')
- #= tk.PhotoImage(file = "..\src\images\Logo.png")
-
-bt = tk.Button(window, text="Start", bg = "#b7b6b6", command = clicked)
-bt.config(width = 20, height = 2)
-bt.place(x = 30, y = 50)
-#bt.grid(column=3, row= 2)
+loading_page()
 window.mainloop()
 
