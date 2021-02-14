@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
+from PIL import Image, ImageDraw
 
-SCREEN_HEIGHT = 1500
-SCREEN_WIDTH = 2500
+SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 800
 
 #class UIHandler:
 #    def __init__(self):
@@ -42,7 +43,8 @@ def clicked():
     #window
 window = tk.Tk(className = "Invisible Man")
 window.configure(bg = '#B7B6B6')
-window.geometry("2500x1500")
+window.geometry("800x600")
+
 
     #loading page
 #label = Label(window, text="Invisible Man", font=("Times New Roman", 30)).pack()
@@ -52,10 +54,13 @@ window.geometry("2500x1500")
 
 
 
-logo_photo = tk.PhotoImage(file = "..\src\images\Logo.png")
 
 
     #submitted page
+
+about_label = tk.Label(text = "About", font = ("DM Mono", 18), fg = "#384559")
+about_label.place(anchor = 's', height = SCREEN_HEIGHT/10, width = SCREEN_WIDTH/2, x =SCREEN_WIDTH/2, y = 0)
+
 top_label = tk.Label(bg = '#C4AB9B')
 top_label.place(height = SCREEN_HEIGHT/10, width = SCREEN_WIDTH)
 
