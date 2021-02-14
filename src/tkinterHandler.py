@@ -52,7 +52,7 @@ window.geometry("2500x1500")
 
 
 
-#logo_photo = tk.PhotoImage(file = "..\src\images\Logo.png")
+logo_photo = tk.PhotoImage(file = "..\src\images\Logo.png")
 
 
     #submitted page
