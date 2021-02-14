@@ -37,10 +37,11 @@ def facedetection(image):
         raise Exception('No face detected from image {}'.format(image))
     first_image_face_ID = detected_faces[0].face_id
     print('Drawing rectangle around face... see popup for results.')
-    img = Image.open(BytesIO(image))
+
+    img = Image.open(image)
     draw = ImageDraw.Draw(img)
     for face in detected_faces:
-        draw.rectangle(getRectangle(face), outline='red')
+        draw.rectangle(getRectangle(face), outline='red', width=5)
     plt.subplot(121), plt.imshow(img)
     plt.show()
 
