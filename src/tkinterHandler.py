@@ -54,6 +54,12 @@ window.geometry("2500x1500")
 
 #logo_photo = tk.PhotoImage(file = "..\src\images\Logo.png")
 
+
+    #submitted page
+sub_top_label = tk.Label(bg = '#C4AB9B')
+sub_top_label.place(height = SCREEN_HEIGHT/10, width = SCREEN_WIDTH)
+
+
 bt = tk.Button(window, text="Start", bg = "#b7b6b6", command = clicked)
 bt.config(width = 20, height = 2)
 bt.place(x = 30, y = 50)
