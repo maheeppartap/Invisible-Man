@@ -2,6 +2,7 @@
 # step 2: look for faces in file
 # step 3: verify faces in file
 # step 4: create function to return image buffers to opencv handler as a tuple
+#
 import asyncio
 import io
 import glob
