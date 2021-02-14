@@ -12,10 +12,7 @@ if __name__ == '__main__':
     # window.mainloop()
     opencv = OpenCVHandler(sys.argv[1], sys.argv[2])
     opencv.process()
-    opencv = OpenCVHandler()
-    tkinterHandler.begin()
-    image1 = open('test_pictures/handsome_guy.jpg', 'r+b')
-    facedetection(image1)
+  
 
 
 
