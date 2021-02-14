@@ -52,8 +52,9 @@ window.geometry("2500x1500")
 
     #landing page
 
-
-logo_photo = Image.l('..\src\images\Logo.png')
+image1 = open('..\src\images\Logo.png', 'r+b')
+display(image1)
+#logo_photo = Image.l('..\src\images\Logo.png')
  #= tk.PhotoImage(file = "..\src\images\Logo.png")
 
 bt = tk.Button(window, text="Start", bg = "#b7b6b6", command = clicked)
