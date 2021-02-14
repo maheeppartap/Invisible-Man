@@ -14,6 +14,7 @@ def loading_page():
     #all the other pages. pack_forget()
     #loading page shit .pack()
     return 0
+    
 
 def landing_page():
     #all the other pages .pack_forget()
